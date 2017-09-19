@@ -1,0 +1,2 @@
+/* pages/movie/moreMovie/moreMovie.wxss */
+@import "../moreMovieTP/moreMovieTemplate.wxss"

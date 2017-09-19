@@ -1,0 +1,24 @@
+<!-- 引用模板 -->
+<import src="postsTemplate/postsTP.wxml" />
+<view class="swiper-bg">
+  <swiper class="post-swiper" indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}" autoplay="{{autoplay}}" interval="{{interval}}">
+    <swiper-item catchtap="swiperTap" class="swiper-item">
+      <image src="../image/post/diaochan.jpg" data-postId="2"></image>
+    </swiper-item>
+    <swiper-item catchtap="swiperTap" class="swiper-item">
+      <image src="../image/post/zhaofeiyan.jpg" data-postId="3"></image>
+    </swiper-item>
+    <swiper-item catchtap="swiperTap" class="swiper-item">
+      <image src="../image/post/miyue.jpg" data-postId="4"></image>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{getPostData}}" wx:for-item="item" wx:key="{{key}}">
+    <!-- 模板 -->
+    <view catchtap="toPostDetail" data-postId="{{item.post_id}}">
+      <template is="postName" data="{{...item}}"></template>
+      <!-- tips：用了...item之后，模板里绑定的item就可以删除不要 -->
+    </view>
+  </block>
+
+</view>

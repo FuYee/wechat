@@ -1,0 +1,95 @@
+post-detail-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  height: 400rpx;
+}
+
+.info-wrap {
+  flex-direction: row;
+  margin: 10px;
+}
+
+.info-wrap image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.info-wrap text {
+  margin-left: 20rpx;
+}
+
+.info-wrap .name {
+  font-size: 34rpx;
+}
+
+.express, .time {
+  font-size: 30rpx;
+}
+
+.title {
+  font-size: 34rpx;
+  font-weight: bold;
+  line-height: 2;
+  margin: 0 30rpx;
+  display: block;
+}
+
+.ico-wrap {
+  position: relative;
+  height: 80rpx;
+  margin: 30rpx;
+  top: 0;
+}
+
+.share-box {
+  text-align: right;
+  flex-direction: row;
+}
+
+.share-box image {
+  width: 110rpx;
+  height: 110rpx;
+  margin-left: 30rpx;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+  position: absolute;
+  top: 58rpx;
+  z-index: -99;
+}
+
+.con {
+  margin: 30rpx;
+  flex-direction: column;
+  color: #9b9b9b;
+}
+
+.con-tit {
+  font-size: 30rpx;
+  display: block;
+  margin: 20rpx 0;
+}
+
+.con-deta {
+  font-size: 30rpx;
+  line-height: 2;
+}
+
+.music {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

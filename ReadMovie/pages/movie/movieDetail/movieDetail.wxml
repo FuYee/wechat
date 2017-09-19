@@ -1,0 +1,71 @@
+<import src="../starsTP/starsTemplate.wxml" />
+<view class="movie-detail-container">
+  <view class='top-wrap'>
+    <image class="movie-detail-img" src='{{movieArr.movieImg}}' mode="aspectFill"></image>
+    <view class='head-info'>
+      <text class='movie-title'>{{movieArr.title}}</text>
+      <text class='year'>
+        <text>{{movieArr.country}} </text>
+        <text> {{movieArr.year}}</text>
+      </text>
+      <view class='count-info'>
+        <text class='wish'>
+          <text class='color-wish'>{{movieArr.wish_count}}</text>人喜欢</text>
+        <text>
+          <text class='color-wish'>{{movieArr.comment_count}}</text>人评论</text>
+      </view>
+      <image class='head-small-img' src='{{movieArr.movieImg}}'></image>
+    </view>
+  </view>
+
+  <view class='people-info'>
+    <text class='original-title'>{{movieArr.original_title}}</text>
+    <view class='cast-info'>
+      <text class='color-gray'>评分</text>
+      <template is="starsName" data="{{average:movieArr.score, stars:movieArr.stars}}"></template>
+    </view>
+    <view class='cast-info'>
+      <text class='color-gray'>导演</text>
+      <text>{{movieArr.director.name}}</text>
+    </view>
+    <view class='cast-info'>
+      <text class='color-gray'>影人</text>
+      <block>
+        <view wx:for="{{movieArr.cast}}" wx:for-item="cast">
+          <text class='cast-flow'>{{cast}}</text>
+        </view>
+      </block>
+    </view>
+    <view class='cast-info'>
+      <text class='color-gray'>类型</text>
+      <block>
+        <view wx:for="{{movieArr.genres}}" wx:for-item="genres">
+          <text>{{genres}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class='hr'></view>
+  <view class='movie-intro-wrap'>
+    <text class='movie-intro'>剧情简介</text>
+    <text>{{movieArr.summary}}</text>
+  </view>
+  <text class='hr'></text>
+
+  <view class='cast-wrap'>
+    <text class='cast-txt'>影人</text>
+    <view class='swiperX'>
+      <scroll-view scroll-x="true" style='height:300rpx;'>
+        <block>
+        <view class='swiper-scroll'>
+          <view class='swiper-scrolls' wx:for="{{movieArr.castsInfo}}" wx:for-item="castsInfo">
+            <image class='cast-pic' src="{{castsInfo.img}}"></image>
+            <text>{{castsInfo.name}}</text>
+          </view>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>

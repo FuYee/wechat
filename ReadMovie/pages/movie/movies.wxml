@@ -1,0 +1,20 @@
+<import src="movieListTP/movieListTemplate.wxml" />
+<import src="moreMovieTP/moreMovieTemplate.wxml" />
+<view class="view-box">
+  <view class="search-wrap">
+    <view class="search-box">
+      <image src="../image/icon/search.png"></image>
+      <input bindfocus="searchMovieTap" bindconfirm="searchChangeTap" placeholder="斧三行、 夏有乔木" />
+    </view>
+    <image src="../image/icon/xx.png" bindtap="closeSearchTap" wx:if="{{searchShowBox}}"></image>
+  </view>
+  <view wx:if="{{!searchShowBox}}">
+    <template is="movieListName" data="{{...comingSoon}}"></template>
+    <template is="movieListName" data="{{...inTheaters}}"></template>
+    <template is="movieListName" data="{{...top250}}"></template>
+  </view>
+</view>
+<!-- 搜索模板页面 -->
+<view class='search-pannel' wx:if="{{searchShowBox}}">
+  <template is="movieGrid" data="{{...searchResult}}"></template>
+</view>

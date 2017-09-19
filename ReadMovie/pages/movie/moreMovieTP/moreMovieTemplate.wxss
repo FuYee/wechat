@@ -1,0 +1,12 @@
+@import "../movieTP/movieTemplate.wxss";
+
+.grid-container {
+  height: 1300rpx;
+}
+
+.grid-lis {
+  height: 1300rpx;
+  padding: 10rpx 0rpx 10rpx 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+}

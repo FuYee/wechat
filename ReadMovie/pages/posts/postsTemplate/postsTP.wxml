@@ -1,0 +1,19 @@
+<template name="postName">
+  <view class="post-list">
+    <view class="post-user-date">
+      <image src="{{user_pic}}" class="post-user"></image>
+      <text class="post-date">{{post_date}}</text>
+    </view>
+    <view>
+      <text class="post-title">{{post_title}}</text>
+      <image class="post-img" src="{{post_pic}}"></image>
+      <text class="post-des">{{post_des}}</text>
+    </view>
+    <view class="like">
+      <image src="{{post_ico.chat}}"></image>
+      <text class="like-num">{{post_ico.chat_num}}</text>
+      <image src="{{post_ico.view}}"></image>
+      <text class="like-num">{{post_ico.view_num}}</text>
+    </view>
+  </view>
+</template>

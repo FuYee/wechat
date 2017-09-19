@@ -1,0 +1,23 @@
+<view class="post-detail-container">
+  <image class="banner" src="{{isMusic?lisData.music.picUrl:lisData.lis_detail.post_pic}}"></image>
+  <image catchtap="musicTap" class="music" src="{{isMusic ? '../../image/music/music-stop.png' : '../../image/music/music-start.png'}}"></image>
+  <view class="info-wrap">
+    <image src="{{lisData.lis_detail.user_pic}}"></image>
+    <text class="name">{{lisData.lis_detail.name}}</text>
+    <text class="express">发表于</text>
+    <text class="time">{{lisData.lis_detail.time}}</text>
+  </view>
+  <text class="title">{{lisData.lis_detail.title}}</text>
+  <view class="ico-wrap">
+    <view class="share-box">
+      <image wx:if="{{collected}}" catchtap="collectTap" src="../../image/icon/collection.png"></image>
+      <image wx:else bindtap="collectTap" src="../../image/icon/collection-anti.png"></image>
+      <image catchtap="shareTap" src="../../image/icon/share.png"></image>
+    </view>
+    <text class="line"></text>
+  </view>
+  <view class="con">
+    <text class="con-tit">{{lisData.lis_detail.text_tit}}</text>
+    <text class="con-deta">{{lisData.lis_detail.text_con}}</text>
+  </view>
+</view>

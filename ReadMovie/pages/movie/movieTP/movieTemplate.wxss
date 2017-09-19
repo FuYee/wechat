@@ -1,0 +1,24 @@
+@import "../starsTP/starsTemplate.wxss";
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  width: 225rpx;
+  padding-left: 10rpx;
+}
+
+.movie-pic {
+  width: 200rpx;
+  height: 270rpx;
+  margin-right: 30rpx;
+}
+
+.movie-name {
+  width: 200rpx;
+  line-height: 90rpx;
+  color: #666;
+  font-size: 32rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,7 @@
+<!--welcom.wxml-->
+
+<view class="contaner">
+  <image class="user-amatar" src="../image/amater/amate.png"></image>
+  <text class="tex">hello,七月</text>
+  <text class="moto" catchtap="toPost">开启小程序之旅</text>
+</view>

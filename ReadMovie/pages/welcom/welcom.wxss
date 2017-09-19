@@ -1,0 +1,33 @@
+/* welcom.wxss */
+
+.user-amatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 160rpx;
+}
+
+.contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tex {
+  margin-top: 100rpx;
+  font-weight: bold;
+}
+
+.moto {
+  margin-top: 200rpx;
+  border: 1px solid #405f80;
+  width: 300rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 4px;
+  color: #405f80;
+}
+
+page {
+  background: #b3d4db;
+}

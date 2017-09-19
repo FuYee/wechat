@@ -1,0 +1,4 @@
+<import src="../moreMovieTP/moreMovieTemplate.wxml" />
+<view>
+  <template is="movieGrid" data="{{movieArr}}"></template>
+</view>

@@ -1,0 +1,29 @@
+@import "movieListTP/movieListTemplate.wxss";
+@import "moreMovieTP/moreMovieTemplate.wxss";
+
+.view-box {
+  background: #f2f2f2;
+}
+
+.search-wrap {
+  display: flex;
+  flex-direction: row;
+  height: 80rpx;
+  padding-top: 30rpx;
+  justify-content: space-between;
+}
+
+.search-wrap image {
+  width: 24rpx;
+  height: 26rpx;
+  margin: 16rpx 26rpx 26rpx 26rpx;
+}
+
+.search-wrap imput {
+  height: 80rpx;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+}

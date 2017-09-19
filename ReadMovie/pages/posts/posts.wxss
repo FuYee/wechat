@@ -1,0 +1,17 @@
+.swiper-bg {
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+}
+
+.post-swiper {
+  height: 500rpx;
+}
+
+.swiper-item image {
+  width: 100%;
+  height: 500rpx;
+}
+
+/* 引用模板wxss文件 */
+@import 'postsTemplate/postsTP.wxss'

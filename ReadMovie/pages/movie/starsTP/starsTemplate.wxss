@@ -1,0 +1,19 @@
+.star-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-wrap image {
+  width: 17rpx;
+  height: 17rpx;
+  flex-direction: row;
+  padding-left: 6rpx;
+  margin-bottom: 10rpx;
+  display: inline-block;
+}
+
+.star-container text {
+  color: #1f3463;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}

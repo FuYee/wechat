@@ -1,0 +1,61 @@
+.post-list {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  margin: 10px 0 20px 0;
+}
+
+.post-user-date {
+  margin: 10px;
+}
+
+.post-user {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+
+.post-date {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.post-title {
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+.post-img {
+  margin-top: 10px;
+  width: 100%;
+  height: 350rpx;
+}
+
+.post-des {
+  font-size: 30rpx;
+  display: block;
+  margin: 10px 10px 0 10px;
+  line-height: 1.8;
+}
+
+.like {
+  flex-direction: row;
+  margin: 10px;
+}
+
+.like image {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.like-num {
+  margin-right: 20px;
+  font-size: 12px;
+}
